@@ -34,7 +34,7 @@ Summary: Development file for libslab
 Group: Graphical desktop/GNOME
 Requires: %libname = %version
 Provides: %name-devel = %version-%release
-Conflicts: %{_lib}gnome-main-menu-devel < 0.9.13
+Obsoletes: %{_lib}gnome-main-menu-devel < 0.9.13
 
 %description -n %develname
 This library provides functionality to create applications like
