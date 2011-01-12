@@ -4,11 +4,12 @@
 
 Summary: Beautification app library
 Name: libslab
-Version: 2.27.91
+Version: 2.30.0
 Release: %mkrel 3
 License: GPLv2+
 Group: Graphical desktop/GNOME
-Source0: http://ftp.gnome.org/pub/GNOME/sources/libslab/2.27/%{name}-%{version}.tar.bz2
+Source0: http://ftp.gnome.org/pub/GNOME/sources/libslab/2.30/%{name}-%{version}.tar.bz2
+Patch0: libslab-bnc536778-fix-libslab-split.patch
 URL: http://www.gnome.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libgnome-menu-devel
@@ -23,7 +24,7 @@ Beautification app library.
 Summary: Beautification app library
 Group: Graphical desktop/GNOME
 Requires: %name = %version
-Conflicts: %{_lib}gnome-main-menu < 0.9.13
+Conflicts: %{_lib}gnome-main-menu < 0.9.14
 
 %description -n %libname
 This library provides functionality to create applications like
@@ -34,7 +35,7 @@ Summary: Development file for libslab
 Group: Graphical desktop/GNOME
 Requires: %libname = %version
 Provides: %name-devel = %version-%release
-Obsoletes: %{_lib}gnome-main-menu-devel < 0.9.13
+Obsoletes: %{_lib}gnome-main-menu-devel < 0.9.14
 
 %description -n %develname
 This library provides functionality to create applications like
@@ -42,6 +43,7 @@ gnome-control center and the application-browser from gnome-main-menu.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x --disable-static
