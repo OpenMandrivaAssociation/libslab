@@ -14,6 +14,7 @@ URL: http://www.gnome.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libgnome-menu-devel
 BuildRequires: gnome-desktop-devel
+BuildRequires: libsm-devel
 BuildRequires: librsvg-devel
 Buildrequires: intltool
 
