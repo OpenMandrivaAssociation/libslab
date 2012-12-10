@@ -66,3 +66,30 @@ rm -rf %{buildroot}
 %{_libdir}/pkgconfig/*.pc
 %{_includedir}/libslab
 
+
+
+%changelog
+* Sat Feb 25 2012 Matthew Dawkins <mattydaw@mandriva.org> 2.30.0-4
++ Revision: 780749
+- rebuild
+- cleaned up spec
+
+* Tue Jan 18 2011 Alexandre Lissy <alissy@mandriva.com> 2.30.0-3
++ Revision: 631580
+- * Adding BuildRequires for libSM
+- * Updating to libslab 2.30
+ * Fixes upstream bug #536778
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - rebuild
+
+* Wed Jan 13 2010 Götz Waschk <waschk@mandriva.org> 2.27.91-2mdv2010.1
++ Revision: 490591
+- rebuild for new libgnome-desktop
+
+* Tue Dec 01 2009 Funda Wang <fwang@mandriva.org> 2.27.91-1mdv2010.1
++ Revision: 472177
+- obsoletes rather than conflicts
+- import libslab
+
+
