@@ -8,7 +8,7 @@ Version: 2.30.0
 Release: 4
 License: GPLv2+
 Group: Graphical desktop/GNOME
-URL: http://www.gnome.org
+URL: https://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/libslab/2.30/%{name}-%{version}.tar.bz2
 Patch0: libslab-bnc536778-fix-libslab-split.patch
 
